@@ -6,8 +6,9 @@ setup(
     py_modules=['pv'],
     install_requires=[
         'Click',
-        'tabulador',
+        'tabulate',
     ],
+    packages=['clients'],
     entry_points="""
         [console_scripts]
         pv=pv:cli

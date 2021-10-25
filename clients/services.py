@@ -39,6 +39,9 @@ class ClientService:
         Time Complexity: O(n)
         """
 
+        if not os.path.exists(self._storage_path):
+            return []
+
         with open(self._storage_path, 'r') as f:
             schema = Client.schema()
 
